@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Comfortaa:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Pacifico&display=swap');
+
+@layer base {
+  body {
+    background: linear-gradient(135deg, #fdf4ff 0%, #f3e8ff 45%, #fae8ff 100%);
+    color: #3b0764;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+  }
+}
+
+.font-script {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-soft {
+  font-family: 'Comfortaa', cursive, sans-serif;
+}
+
+/* Custom scrollbar for soft lilac theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f3ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8b4fe;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c084fc;
+}
+
+/* Red marker animation on tickets */
+@keyframes markX {
+  0% {
+    transform: scale(0.6) rotate(-12deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(-6deg);
+    opacity: 1;
+  }
+}
+
+.animate-mark-x {
+  animation: markX 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Gestor de Rifas (1-200)",
+  "description": "Sistema completo para administración de rifas con tabla de números del 1 al 200, reservas de boletas, confirmación de pagos para administradores, historial de transacciones y buscador por nombre.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
